@@ -443,9 +443,10 @@
   }
 
   .hero__date-line {
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-rose), transparent);
+    width: 72px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-wine), transparent);
+    opacity: 0.65;
   }
 
   .hero__calendar {
@@ -553,12 +554,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.25rem;
     margin-bottom: 2.5rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.15em;
-    color: #4a2c35;
     animation: fadeUp 0.8s ease-out 1s both;
+  }
+
+  .hero__date-text {
+    font-family: var(--font-names);
+    font-size: clamp(1.35rem, 3.5vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--color-wine);
+    padding: 0.3rem 1rem;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 999px;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.7);
+    text-shadow:
+      0 1px 2px rgba(255, 255, 255, 0.95),
+      0 0 16px rgba(255, 255, 255, 0.8);
   }
   
   @keyframes fadeUp {
@@ -1923,8 +1936,9 @@
       font-size: clamp(2.5rem, 12vw, 3.6rem);
     }
     .hero__sep { font-size: 0.38em; }
-    .hero__date { gap: 0.55rem; letter-spacing: 0.08em; }
-    .hero__date-line { width: 38px; }
+    .hero__date { gap: 0.65rem; }
+    .hero__date-text { font-size: clamp(1.2rem, 5vw, 1.65rem); padding: 0.25rem 0.85rem; }
+    .hero__date-line { width: 32px; }
     .venues__grid { grid-template-columns: 1fr; }
     .venue-card { padding: 1.25rem; }
     .gallery__grid { grid-template-columns: 1fr; }
