@@ -396,9 +396,9 @@
     font-family: var(--font-body);
     font-size: 0.42em;
     font-weight: 500;
-    color: var(--color-rose-deep);
+    color: var(--color-wine);
     line-height: 1;
-    opacity: 0.85;
+    opacity: 1;
   }
   
   .hero__content {
@@ -422,9 +422,9 @@
   .hero__pretitle {
     font-size: 0.95rem;
     letter-spacing: 0.15em;
-    color: var(--color-rose-deep);
+    color: #4a2c35;
     margin-bottom: 1.5rem;
-    animation: fadeUp 0.8s ease-out 0.2s both, shimmer 3s ease-in-out infinite 2s;
+    animation: fadeUp 0.8s ease-out 0.2s both;
   }
   
   .hero__subtitle {
@@ -432,13 +432,14 @@
     font-weight: 400;
     max-width: 480px;
     margin: 0 auto 2rem;
-    color: var(--color-text);
+    color: #4a3838;
     text-shadow: 0 1px 12px rgba(255, 255, 255, 0.9);
     animation: fadeUp 0.8s ease-out 0.8s both;
   }
   
   .hero__location {
     margin-bottom: 1.75rem;
+    color: #4a2c35;
   }
 
   .hero__date-line {
@@ -556,7 +557,7 @@
     margin-bottom: 2.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.15em;
-    color: var(--color-rose-deep);
+    color: #4a2c35;
     animation: fadeUp 0.8s ease-out 1s both;
   }
   
@@ -1757,7 +1758,7 @@
   
   .hero__location {
     margin: -1.5rem auto 2rem;
-    color: #9b7280;
+    color: #4a2c35;
     letter-spacing: 0.18em;
     font-size: 0.82rem;
     text-transform: uppercase;
