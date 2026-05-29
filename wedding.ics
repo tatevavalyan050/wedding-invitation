@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tatev and Vahan Wedding//HY
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:tatev-vahan-wedding-20260727@wedding
+DTSTAMP:20260529T120000Z
+DTSTART:20260727T070000Z
+DTEND:20260727T160000Z
+SUMMARY:Տաթև և Վահանի հարսանիք
+DESCRIPTION:Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին։\n11:00 — «Ռոյալ Երևան»\n14:00 — Սուրբ Հովհաննես, Աբովյան\n17:00–18:00 — Մեղրի արարողություն և հանդիսություն
+LOCATION:«Ռոյալ Երևան», Բագրևանդի 102, Երևան
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Սիրով հրավիրում ենք Ձեզ Տաթև և Վահանի հարսանիքին — 27 հուլիսի, 2026, Երևան և Աբովյան" />
+  <meta name="theme-color" content="#fff0f3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hy_AM" />
+  <meta property="og:title" content="Տաթև &amp; Վահան | Հարսանիք" />
+  <meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին — 27 հուլիսի, 2026" />
+  <meta property="og:image" content="og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Տաթև &amp; Վահան | Հարսանիք" />
+  <meta name="twitter:description" content="Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին — 27 հուլիսի, 2026" />
+  <meta name="twitter:image" content="og-image.jpg" />
+  <title>Տաթև & Վահան | Հարսանիք</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="images/IMG_9801.jpeg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Armenian:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="abstract-canvas" class="abstract-canvas" aria-hidden="true"></canvas>
+  <div class="abstract-blobs" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+  <div class="floating-petals" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="floating-shapes" aria-hidden="true">
+    <span class="float-line float-line--1"></span>
+    <span class="float-line float-line--2"></span>
+    <span class="float-line float-line--3"></span>
+    <span class="float-line float-line--4"></span>
+    <span class="float-line float-line--5"></span>
+    <span class="float-arrow float-arrow--1"></span>
+    <span class="float-arrow float-arrow--2"></span>
+    <span class="float-arrow float-arrow--3"></span>
+    <span class="float-arrow float-arrow--4"></span>
+    <span class="float-arrow float-arrow--5"></span>
+  </div>
+
+  <nav class="nav" id="nav" aria-label="Գլխավոր նavigation">
+    <a href="#hero">Սկիզբ</a>
+    <a href="#story">Մեր պատմությունը</a>
+    <a href="#schedule">Ժամանակացույց</a>
+    <a href="#venues">Վայրեր</a>
+    <a href="#gallery">Նկարներ</a>
+    <a href="#rsvp">Կապ</a>
+  </nav>
+
+  <nav class="nav-bottom" id="nav-bottom" aria-label="Բջջային նavigation">
+    <a href="#hero"><span class="nav-bottom__icon" aria-hidden="true">♥</span>Սկիզբ</a>
+    <a href="#story"><span class="nav-bottom__icon" aria-hidden="true">✿</span>Պատմություն</a>
+    <a href="#schedule"><span class="nav-bottom__icon" aria-hidden="true">◷</span>Ծրագիր</a>
+    <a href="#venues"><span class="nav-bottom__icon" aria-hidden="true">📍</span>Վայր</a>
+    <a href="#gallery"><span class="nav-bottom__icon" aria-hidden="true">▣</span>Նկար</a>
+    <a href="#rsvp"><span class="nav-bottom__icon" aria-hidden="true">☎</span>Կապ</a>
+  </nav>
+
+  <header class="hero" id="hero">
+    <img class="hero__bg" src="images/IMG_9801.jpeg" alt="" aria-hidden="true" fetchpriority="high" decoding="async" />
+    <div class="hero__abstract" aria-hidden="true">
+      <span class="abstract-ring abstract-ring--1"></span>
+      <span class="abstract-ring abstract-ring--2"></span>
+      <span class="abstract-ring abstract-ring--3"></span>
+      <span class="abstract-arc abstract-arc--1"></span>
+      <span class="abstract-arc abstract-arc--2"></span>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content reveal">
+      <p class="hero__pretitle">Սիրով հրավիրում ենք Ձեզ</p>
+      <h1 class="hero__names">
+        <span class="name name--bride">Տաթև</span>
+        <span class="hero__sep" aria-hidden="true">և</span>
+        <span class="name name--groom">Վահան</span>
+      </h1>
+      <p class="hero__subtitle">Միացեք մեզ՝ նշելու մեր կյանքի ամենագեղեցիկ և կարևոր օրը</p>
+      <div class="hero__date">
+        <span class="hero__date-line"></span>
+        <span>27 հուլիսի, 2026</span>
+        <span class="hero__date-line"></span>
+      </div>
+      <p class="hero__location">Երևան · Աբովյան</p>
+      <a href="#schedule" class="btn btn--outline">Տեսնել օրվա ծրագիրը</a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <section class="countdown-section reveal">
+    <p class="section-label">Մինչև մեր ամենակարևոր օրը</p>
+    <div class="countdown" id="countdown">
+      <div class="countdown__item">
+        <span class="countdown__num" data-unit="days">00</span>
+        <span class="countdown__label">օր</span>
+      </div>
+      <div class="countdown__item">
+        <span class="countdown__num" data-unit="hours">00</span>
+        <span class="countdown__label">ժամ</span>
+      </div>
+      <div class="countdown__item">
+        <span class="countdown__num" data-unit="minutes">00</span>
+        <span class="countdown__label">րոպե</span>
+      </div>
+      <div class="countdown__item">
+        <span class="countdown__num" data-unit="seconds">00</span>
+        <span class="countdown__label">վայրկյան</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Մեր սերը</span>
+        <h2 class="section-title">Մեր սիրո պատմությունը</h2>
+        <div class="ornament ornament--abstract"><span></span></div>
+      </div>
+
+      <div class="story__intro reveal">
+        <p class="story__lead">
+          Տասը տարի միասին՝ լի ժպիտներով, աջակցությամբ և անսահման սիրով։
+          Այսօր մենք կրկին ընտրում ենք միմյանց և ցանկանում ենք այդ գեղեցիկ պահը կիսել Ձեզ հետ։
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__item reveal">
+          <div class="timeline__year">Առաջին հանդիպում</div>
+          <div class="timeline__content">
+            <p>Երբ առաջին անգամ տեսանք միմյանց, զգացինք, որ կյանքը մեզ միացրել է պատահականից ավելին։ Մեր սերը սկսվեց հանգիստ, ջերմ և լուսավոր՝ ինչպես առավոտյան առաջին լույսը։</p>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__year">Միասին աճելը</div>
+          <div class="timeline__content">
+            <p>Տարիները լցվեցին երազանքներով, ծիծաղով և անմոռանալի պահերով։ Մենք միասին կառուցեցինք մեր աշխարհը՝ հարգանքով, վստահությամբ և սիրով։</p>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__year">«Այո»</div>
+          <div class="timeline__content">
+            <p>Մենք որոշեցինք միասին քայլել կյանքի ճանապարհով՝ ընտանիք կառուցել և միշտ լինել միմյանց կողքին՝ թե՛ ուրախության, թե՛ փորձությունների պահին։</p>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__year">Հարսանիք</div>
+          <div class="timeline__content">
+            <p>Այժմ սիրով հրավիրում ենք Ձեզ մեր մեծ օրվան՝ որպես մեր սիրելի մարդկանց, ովքեր մեր կողքին են այս գեղեցիկ ճանապարհին։</p>
+          </div>
+        </article>
+      </div>
+
+      <blockquote class="story__quote reveal">
+        <div class="quote-accent" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p>«Մեր սերն աճում է — այսօր, վաղը և միշտ»</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ծրագիր</span>
+        <h2 class="section-title">Օրվա ժամանակացույց</h2>
+        <div class="ornament ornament--abstract"><span></span></div>
+      </div>
+
+      <div class="schedule__grid">
+        <article class="schedule-card reveal">
+          <div class="schedule-card__icon">🥂</div>
+          <time class="schedule-card__time">11:00</time>
+          <h3 class="schedule-card__title">Հարսանյաց օրվա սկիզբ</h3>
+          <p class="schedule-card__place">«Ռոյալ Երևան» ռեստորան</p>
+          <p class="schedule-card__desc">Օրվա ջերմ մեկնարկը՝ ընտանիքի և մտերիմների հետ</p>
+        </article>
+
+        <article class="schedule-card reveal">
+          <div class="schedule-card__icon">⛪</div>
+          <time class="schedule-card__time">14:00</time>
+          <h3 class="schedule-card__title">Եկեղեցական արարողություն</h3>
+          <p class="schedule-card__place">Սուրբ Հովհաննես եկեղեցի</p>
+          <p class="schedule-card__desc">Աբովյան, Սահմանադրության հրապարակ</p>
+        </article>
+
+        <article class="schedule-card reveal">
+          <div class="schedule-card__icon">🍯</div>
+          <time class="schedule-card__time">17:00</time>
+          <h3 class="schedule-card__title">Մեղրի արարողություն</h3>
+          <p class="schedule-card__place">«Ռոյալ Երևան» ռեստորան</p>
+          <p class="schedule-card__desc">Ավանդական և ջերմ մեղրի արարողություն</p>
+        </article>
+
+        <article class="schedule-card reveal schedule-card--highlight">
+          <div class="schedule-card__icon">🎉</div>
+          <time class="schedule-card__time">18:00</time>
+          <h3 class="schedule-card__title">Հանդիսություն</h3>
+          <p class="schedule-card__place">«Ռոյալ Երևան» ռեստորան</p>
+          <p class="schedule-card__desc">Տոնական ընթրիք, երաժշտություն, պար և անմոռանալի պահեր</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="venues" id="venues">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Վայրեր</span>
+        <h2 class="section-title">Մեր վայրերը</h2>
+        <div class="ornament ornament--abstract"><span></span></div>
+      </div>
+
+      <div class="venues__grid">
+        <article class="venue-card reveal">
+          <div class="venue-card__header">
+            <span class="venue-card__badge">Ռեստորան</span>
+            <h3>«Ռոյալ Երևան» ռեստորան</h3>
+          </div>
+          <address class="venue-card__address">
+            Հայաստան, 0062, Երևան<br />
+            Բագրևանդի փող., 102 շենք
+          </address>
+          <ul class="venue-card__times">
+            <li><strong>11:00</strong> — Հարսանյաց օրվա սկիզբ</li>
+            <li><strong>17:00</strong> — Մեղրի արարողություն</li>
+            <li><strong>18:00</strong> — Հանդիսություն</li>
+          </ul>
+          <div class="venue-card__map">
+            <div class="map-ribbon"><span>📍</span> Ուղղություն</div>
+            <iframe
+              title="Ռոյալ Երևան ռեստորան քartez"
+              src="https://yandex.com/map-widget/v1/?text=Bagrevand%20102%20Yerevan%20Armenia&z=16&l=map"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a
+            class="btn btn--small"
+            href="https://yandex.com/maps/?text=Bagrevand%20102%20Yerevan%20Armenia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Բացել Yandex-ում</a>
+        </article>
+
+        <article class="venue-card reveal">
+          <div class="venue-card__header">
+            <span class="venue-card__badge venue-card__badge--church">Եկեղեցի</span>
+            <h3>Սուրբ Հովհաննես եկեղեցի</h3>
+          </div>
+          <address class="venue-card__address">
+            Հայաստան, Կոտայքի մարզ, Աբովյան<br />
+            Սահմանադրության հրապարակ
+          </address>
+          <ul class="venue-card__times">
+            <li><strong>14:00</strong> — Եկեղեցական արարողություն</li>
+          </ul>
+          <div class="venue-card__map venue-card__map--restaurant">
+            <div class="map-ribbon"><span>📍</span> Ուղղություն</div>
+            <iframe
+              title="Սուրբ Հովհաննես եկեղեցi քartez"
+              src="https://yandex.com/map-widget/v1/?text=Surp%20Hovhannes%20Church%20Abovyan%20Armenia&z=16&l=map"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a
+            class="btn btn--small"
+            href="https://yandex.com/maps/?text=Surp%20Hovhannes%20Church%20Abovyan%20Armenia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Բացել Yandex-ում</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Մեր պահերը</span>
+        <h2 class="section-title">Նկարների պահոց</h2>
+        <div class="ornament ornament--abstract"><span></span></div>
+      </div>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item reveal" data-index="0">
+          <img src="images/IMG_9619.jpeg" alt="Տաթև և Վահան — 1" loading="lazy" />
+          <figcaption>Մեր առաջին գեղեցիկ պահերից</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-index="1">
+          <img src="images/IMG_9671.jpeg" alt="Տաթև և Վահան — 2" loading="lazy" />
+          <figcaption>Միասին՝ ամեն քայլում</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-index="2">
+          <img src="images/IMG_9798.jpeg" alt="Տաթև և Վահան — 3" loading="lazy" />
+          <figcaption>Ժպիտներ, որ հիշվելու են</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-index="3">
+          <img src="images/IMG_9801.jpeg" alt="Տաթև և Վահան — 4" loading="lazy" />
+          <figcaption>Սիրո պարզ ու անկեղծ պահ</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-index="5">
+          <img src="images/IMG_9802.jpeg" alt="Տաթև և Վահան — 6" loading="lazy" />
+          <figcaption>Նոր ճանապարհի սկիզբը</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-index="4">
+          <img src="images/IMG_9797.jpeg" alt="Տաթև և Վահան — 5" loading="lazy" />
+          <figcaption>Մեր պատմության լուսավոր էջը</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Փակել">×</button>
+    <button class="lightbox__prev" aria-label="Նախորդ">‹</button>
+    <img class="lightbox__img" src="" alt="" />
+    <button class="lightbox__next" aria-label="Հաջորդ">›</button>
+  </div>
+
+  <section class="contact" id="rsvp">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Կապ</span>
+        <h2 class="section-title">Կապ և հաստատում</h2>
+        <div class="ornament ornament--abstract"><span></span></div>
+      </div>
+
+      <p class="contact__text reveal">
+        Սիրով սպասում ենք Ձեզ։ Հարցերի կամ մասնակցությունը հաստատելու համար կարող եք զանգահարել մեզ։
+      </p>
+
+      <div class="contact__cards reveal">
+        <a href="tel:+37494918675" class="contact-card" aria-label="Զանգահարել Տաթև">
+          <span class="contact-card__role">Տաթև</span>
+          <span class="contact-card__phone">+374 94 918 675</span>
+        </a>
+        <a href="tel:+37499495050" class="contact-card" aria-label="Զանգահարել Վահան">
+          <span class="contact-card__role">Վահան</span>
+          <span class="contact-card__phone">+374 99 495 050</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__accent" aria-hidden="true"><span></span><span></span><span></span></div>
+    <p class="footer__tagline">Սիրով և երախտագիտությամբ</p>
+    <p class="footer__years">10 տարի միասին · և մի ամբողջ կյանք առջևում</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
